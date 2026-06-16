@@ -1,0 +1,1676 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rajkumar D | Portfolio Preview</title>
+  <meta name="description" content="Portfolio preview for Rajkumar D, a Content Design, UI/UX, 3D Visualization, AR, Motion Graphics, and GenAI Content Transformation leader.">
+  <style>
+    :root {
+      --ink: #111827;
+      --muted: #526070;
+      --paper: #f7f7f4;
+      --panel: #ffffff;
+      --line: #d9ded8;
+      --teal: #007f78;
+      --amber: #c67a14;
+      --steel: #405568;
+      --charcoal: #17202a;
+      --soft: #e9efed;
+      --shadow: 0 18px 55px rgba(17, 24, 39, 0.14);
+      --radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.55;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .site-shell {
+      min-height: 100vh;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.86), rgba(247,247,244,1) 74%),
+        radial-gradient(circle at top right, rgba(0,127,120,0.13), transparent 34%),
+        var(--paper);
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 14px clamp(18px, 4vw, 56px);
+      border-bottom: 1px solid rgba(217, 222, 216, 0.78);
+      background: rgba(247, 247, 244, 0.92);
+      backdrop-filter: blur(16px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 190px;
+      font-weight: 760;
+      letter-spacing: 0;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      color: #fff;
+      background: linear-gradient(135deg, var(--charcoal), var(--teal));
+      font-size: 13px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      font-size: 14px;
+      color: var(--steel);
+      font-weight: 650;
+    }
+
+    .nav-links a {
+      padding: 9px 10px;
+      border-radius: 999px;
+    }
+
+    .nav-links a:hover {
+      background: var(--soft);
+      color: var(--ink);
+    }
+
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 0.92fr) minmax(320px, 1.08fr);
+      min-height: 680px;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 74px clamp(20px, 5vw, 72px);
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 820;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 18px;
+      font-size: clamp(48px, 7vw, 94px);
+      line-height: 0.96;
+      letter-spacing: 0;
+      color: var(--charcoal);
+    }
+
+    .hero-title {
+      max-width: 760px;
+      margin-bottom: 26px;
+      color: #283746;
+      font-size: clamp(19px, 2vw, 25px);
+      font-weight: 680;
+      line-height: 1.35;
+    }
+
+    .hero-summary {
+      max-width: 690px;
+      margin-bottom: 34px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .cta-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 38px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 46px;
+      padding: 12px 18px;
+      border: 1px solid var(--charcoal);
+      border-radius: 999px;
+      font-weight: 760;
+      font-size: 14px;
+      transition: transform 160ms ease, background 160ms ease, color 160ms ease;
+    }
+
+    .button.primary {
+      color: #fff;
+      background: var(--charcoal);
+    }
+
+    .button.secondary {
+      color: var(--charcoal);
+      background: rgba(255, 255, 255, 0.66);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      max-width: 760px;
+    }
+
+    .proof {
+      min-height: 106px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: 0 10px 28px rgba(64, 85, 104, 0.08);
+    }
+
+    .proof strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 28px;
+      line-height: 1;
+      color: var(--teal);
+    }
+
+    .proof span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .hero-media {
+      position: relative;
+      min-height: 520px;
+      background: var(--charcoal);
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      min-height: 680px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .media-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(247,247,244,0.96), rgba(247,247,244,0.22) 36%, rgba(23,32,42,0.08));
+      pointer-events: none;
+    }
+
+    .section {
+      padding: 76px clamp(20px, 5vw, 72px);
+    }
+
+    .section.alt {
+      background: #ffffff;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
+      gap: 36px;
+      align-items: end;
+      max-width: 1220px;
+      margin: 0 auto 36px;
+    }
+
+    h2 {
+      margin-bottom: 0;
+      font-size: clamp(30px, 4vw, 54px);
+      line-height: 1.02;
+      color: var(--charcoal);
+    }
+
+    .section-head p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+      max-width: 1220px;
+      margin: 0 auto;
+    }
+
+    .value-card,
+    .story-card,
+    .experience-card,
+    .contact-panel,
+    .checklist {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: 0 14px 35px rgba(17, 24, 39, 0.07);
+    }
+
+    .value-card {
+      padding: 22px;
+      min-height: 230px;
+    }
+
+    .icon {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      margin-bottom: 18px;
+      border-radius: 50%;
+      background: var(--soft);
+      color: var(--teal);
+    }
+
+    .icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      color: var(--charcoal);
+      font-size: 19px;
+      line-height: 1.22;
+    }
+
+    .value-card p,
+    .story-card p,
+    .experience-card p,
+    .checklist p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .work-tabs {
+      max-width: 1220px;
+      margin: 0 auto;
+    }
+
+    .tab-list {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px;
+      margin-bottom: 18px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #eef3f1;
+      scrollbar-width: thin;
+    }
+
+    .tab-button {
+      flex: 0 0 auto;
+      min-height: 42px;
+      padding: 10px 14px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      color: var(--steel);
+      background: transparent;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 780;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .tab-button:hover {
+      color: var(--ink);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .tab-button[aria-selected="true"] {
+      color: #fff;
+      background: var(--charcoal);
+      box-shadow: 0 10px 24px rgba(23, 32, 42, 0.18);
+    }
+
+    .tab-panel {
+      display: none;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .story-card {
+      display: grid;
+      gap: 20px;
+      padding: 26px;
+      min-height: 330px;
+      overflow: hidden;
+    }
+
+    .story-card.featured {
+      grid-template-columns: minmax(0, 1.02fr) minmax(260px, 0.98fr);
+      align-items: start;
+      grid-column: 1 / -1;
+      min-height: 0;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.96), rgba(233,239,237,0.88)),
+        var(--panel);
+    }
+
+    .work-proof {
+      display: grid;
+      gap: 12px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.78);
+    }
+
+    .work-proof strong {
+      color: var(--charcoal);
+      font-size: 15px;
+    }
+
+    .work-proof span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .sample-gallery {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .sample-card {
+      min-height: 180px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fbfcfb;
+      box-shadow: 0 10px 24px rgba(17, 24, 39, 0.06);
+    }
+
+    .sample-card span {
+      display: inline-flex;
+      margin-bottom: 12px;
+      padding: 6px 9px;
+      border-radius: 999px;
+      color: #17312f;
+      background: #ccefe9;
+      font-size: 12px;
+      font-weight: 820;
+    }
+
+    .sample-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--charcoal);
+      font-size: 15px;
+      line-height: 1.28;
+    }
+
+    .sample-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .sample-evidence {
+      margin-top: 16px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #ffffff;
+      box-shadow: 0 12px 28px rgba(17, 24, 39, 0.07);
+    }
+
+    .sample-evidence h3 {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    .sample-evidence ul {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .sample-evidence a {
+      color: var(--teal);
+      font-weight: 760;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .sample-thumb {
+      display: block;
+      width: min(640px, 100%);
+      margin-top: 10px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 12px 26px rgba(17, 24, 39, 0.11);
+    }
+
+    .proof-samples {
+      display: grid;
+      gap: 10px;
+      margin-top: 2px;
+    }
+
+    .proof-samples.empty {
+      min-height: 92px;
+      place-items: center;
+      padding: 12px;
+      border: 1px dashed #cfd8d5;
+      border-radius: var(--radius);
+      background: #fbfcfb;
+    }
+
+    .sample-empty {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 650;
+      text-align: center;
+    }
+
+    .proof-thumb {
+      display: grid;
+      grid-template-columns: 86px minmax(0, 1fr);
+      align-items: center;
+      gap: 12px;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fbfcfb;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .proof-thumb:hover {
+      border-color: var(--teal);
+      box-shadow: 0 10px 22px rgba(17, 24, 39, 0.09);
+    }
+
+    .proof-thumb img {
+      width: 86px;
+      height: 64px;
+      border-radius: 6px;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      background: var(--soft);
+    }
+
+    .proof-thumb strong {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 14px;
+    }
+
+    .proof-thumb span {
+      margin: 0;
+      font-size: 13px;
+    }
+
+    .ux-journey {
+      display: grid;
+      gap: 7px;
+      margin: 12px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .ux-journey li::marker {
+      color: var(--amber);
+    }
+
+    .story-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 820;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+    }
+
+    .tag {
+      padding: 7px 10px;
+      border: 1px solid #cfd8d5;
+      border-radius: 999px;
+      color: #334155;
+      background: #f8faf8;
+      font-size: 12px;
+      font-weight: 720;
+    }
+
+    .impact-list {
+      display: grid;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .impact-list li {
+      position: relative;
+      padding-left: 24px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .impact-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--amber);
+    }
+
+    .experience-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+      gap: 22px;
+      max-width: 1220px;
+      margin: 0 auto;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 14px;
+    }
+
+    .experience-card {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+    }
+
+    .experience-card .date {
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 820;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .experience-more {
+      align-self: flex-end;
+      margin-top: auto;
+      padding: 8px 0 0;
+      border: 0;
+      color: var(--teal);
+      background: transparent;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .experience-more:hover {
+      color: var(--amber);
+      text-decoration: underline;
+    }
+
+    .profile-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: rgba(17, 24, 39, 0.62);
+    }
+
+    .profile-modal.open {
+      display: flex;
+    }
+
+    .profile-dialog {
+      width: min(980px, 100%);
+      max-height: min(86vh, 880px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      border-radius: var(--radius);
+      background: #ffffff;
+      box-shadow: 0 28px 80px rgba(17, 24, 39, 0.34);
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 22px 24px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(135deg, rgba(23,32,42,0.98), rgba(0,127,120,0.88));
+      color: #ffffff;
+    }
+
+    .profile-header p {
+      margin: 0 0 4px;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .profile-header h2 {
+      margin: 0;
+      color: #ffffff;
+      font-size: clamp(24px, 3vw, 36px);
+      line-height: 1.1;
+    }
+
+    .profile-close {
+      flex: 0 0 auto;
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      border-radius: 50%;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.12);
+      font-size: 24px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .profile-body {
+      max-height: calc(86vh - 104px);
+      overflow: auto;
+      padding: 24px;
+    }
+
+    .profile-body h3 {
+      margin: 22px 0 10px;
+      font-size: 19px;
+    }
+
+    .profile-body h3:first-child {
+      margin-top: 0;
+    }
+
+    .profile-body ul {
+      display: grid;
+      gap: 9px;
+      margin: 0 0 8px;
+      padding-left: 21px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .profile-body li::marker {
+      color: var(--amber);
+    }
+
+    .skills-panel {
+      display: grid;
+      gap: 12px;
+    }
+
+    .skill-block {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fbfcfb;
+    }
+
+    .skill-block h3 {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .skill-block p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .roles-band {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 34px;
+      border-radius: var(--radius);
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(23,32,42,0.98), rgba(0,127,120,0.86)),
+        var(--charcoal);
+      box-shadow: var(--shadow);
+    }
+
+    .roles-band h2 {
+      color: #fff;
+      font-size: clamp(28px, 3vw, 42px);
+    }
+
+    .roles-band p {
+      max-width: 880px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 17px;
+    }
+
+    .role-list {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    .role-list span {
+      padding: 9px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      font-size: 13px;
+      font-weight: 760;
+    }
+
+    .cert-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .cert-line {
+      display: flex;
+      align-items: baseline;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .cert-line .eyebrow {
+      margin: 0;
+      color: #9fe8df;
+    }
+
+    .cert-line .cert-issued {
+      margin: 0;
+    }
+
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(300px, 1.05fr);
+      gap: 22px;
+      max-width: 1220px;
+      margin: 0 auto;
+    }
+
+    .contact-panel,
+    .checklist {
+      padding: 28px;
+    }
+
+    .contact-links {
+      display: grid;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .strict-two-line {
+      display: block;
+    }
+
+    .strict-two-line span {
+      display: block;
+      white-space: nowrap;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fbfcfb;
+      font-weight: 720;
+    }
+
+    .checklist ul {
+      display: grid;
+      gap: 10px;
+      padding: 0;
+      margin: 16px 0 0;
+      list-style: none;
+    }
+
+    .checklist li {
+      position: relative;
+      padding-left: 24px;
+      color: var(--muted);
+    }
+
+    .checklist li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+      background: var(--teal);
+    }
+
+    footer {
+      padding: 26px clamp(20px, 5vw, 72px);
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+      background: #fff;
+    }
+
+    footer .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      max-width: 1220px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 1080px) {
+      .hero,
+      .section-head,
+      .experience-layout,
+      .contact-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-media {
+        order: -1;
+        min-height: 360px;
+      }
+
+      .hero-media img {
+        min-height: 360px;
+      }
+
+      .media-overlay {
+        background: linear-gradient(180deg, rgba(23,32,42,0.08), rgba(247,247,244,0.92));
+      }
+
+      .proof-grid,
+      .value-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .story-card.featured {
+        grid-template-columns: 1fr;
+      }
+
+      .sample-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 760px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+
+      .hero-copy,
+      .section {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .proof-grid,
+      .value-grid,
+      .story-grid,
+      .sample-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .value-card,
+      .story-card,
+      .experience-card,
+      .contact-panel,
+      .checklist,
+      .roles-band,
+      .certifications-band {
+        padding: 20px;
+      }
+
+      .contact-link {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .tab-list {
+        padding: 6px;
+      }
+
+      .tab-button {
+        min-height: 40px;
+        padding: 9px 12px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="nav" aria-label="Portfolio navigation">
+      <a class="brand" href="#top" aria-label="Rajkumar D home">
+        <span class="brand-mark">RD</span>
+        <span>Rajkumar D</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#expertise">Expertise</a>
+        <a href="#portfolio">Portfolio Stories</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Portfolio introduction">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio Preview | Content, Design, Visualization</p>
+          <h1>Rajkumar D</h1>
+          <p class="hero-title">Content, Design and Visualization Lead specializing in UI/UX, enterprise digital experience, 3D visualization, motion graphics, AR experiences, and GenAI-driven media transformation</p>
+          <p class="hero-summary">I help product, engineering, marketing, and documentation teams convert complex technical information into clear, immersive, job-ready digital experiences that customers can understand faster.</p>
+          <div class="cta-row">
+            <a class="button primary" href="mailto:raj261081@yahoo.com" aria-label="Email Rajkumar D">Email Rajkumar</a>
+            <a class="button secondary" href="#portfolio" aria-label="View portfolio stories">View Portfolio Stories</a>
+          </div>
+          <div class="proof-grid" aria-label="Career highlights">
+            <div class="proof"><strong>22+</strong><span>Years across design, content and visualization</span></div>
+            <div class="proof"><strong>13+</strong><span>Years leading rich media initiatives at Cisco</span></div>
+            <div class="proof"><strong>5</strong><span>Core domains: IT, telecom, automotive, semiconductor, industrial</span></div>
+            <div class="proof"><strong>360</strong><span>End-to-end ownership from strategy to delivery</span></div>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <img src="rajkumar-portfolio-hero.png" alt="">
+          <div class="media-overlay"></div>
+        </div>
+      </section>
+
+      <section class="section" id="expertise">
+        <div class="section-head">
+          <h2>Design Contributions</h2>
+          <p>A rare combination of design leadership, technical communication depth, visualization craft, and enterprise delivery discipline.</p>
+        </div>
+        <div class="value-grid">
+          <article class="value-card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h10M4 19h16"></path></svg></div>
+            <h3>Content Transformation</h3>
+            <p>Modernizes dense technical documentation into scalable visual, interactive, and AI-assisted content systems.</p>
+          </article>
+          <article class="value-card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"></path><path d="M12 12l8-4.5"></path><path d="M12 12v9"></path><path d="M12 12L4 7.5"></path></svg></div>
+            <h3>3D Visualization</h3>
+            <p>Builds photorealistic renders, low-poly optimized 3D models, technical visuals, and product animations.</p>
+          </article>
+          <article class="value-card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"></path><path d="M8 9h8"></path><path d="M8 13h5"></path></svg></div>
+            <h3>UI/UX Design</h3>
+            <p>Creates flows, wireframes, prototypes, and accessible enterprise web experiences using Figma and Adobe XD.</p>
+          </article>
+          <article class="value-card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4v16l13-8L7 4z"></path></svg></div>
+            <h3>Motion and Video</h3>
+            <p>Directs storyboarding, scripting, video editing, instructional animations, voiceover sync, and post-production.</p>
+          </article>
+          <article class="value-card">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2v4"></path><path d="M12 18v4"></path><path d="M4.9 4.9l2.8 2.8"></path><path d="M16.3 16.3l2.8 2.8"></path><path d="M2 12h4"></path><path d="M18 12h4"></path><path d="M4.9 19.1l2.8-2.8"></path><path d="M16.3 7.7l2.8-2.8"></path><circle cx="12" cy="12" r="3"></circle></svg></div>
+            <h3>GenAI Enablement</h3>
+            <p>Applies ChatGPT, Adobe Firefly, Lovart, and AI-driven platforms to accelerate content and design workflows.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt" id="portfolio">
+        <div class="section-head">
+          <h2>Portfolio Stories</h2>
+          <p>Work stories that connect creative direction with execution, showing how complex technical content was transformed into clearer, more visual, and more usable product experiences.</p>
+        </div>
+        <div class="work-tabs">
+          <div class="tab-list" role="tablist" aria-label="Rajkumar work categories">
+            <button class="tab-button" id="tab-content" role="tab" type="button" aria-selected="true" aria-controls="panel-content" data-tab="content">Content Transformation</button>
+            <button class="tab-button" id="tab-delivery" role="tab" type="button" aria-selected="false" aria-controls="panel-delivery" data-tab="delivery">Delivery Leadership</button>
+            <button class="tab-button" id="tab-3d" role="tab" type="button" aria-selected="false" aria-controls="panel-3d" data-tab="3d">3D Visualization</button>
+            <button class="tab-button" id="tab-video" role="tab" type="button" aria-selected="false" aria-controls="panel-video" data-tab="video">Video & Motion</button>
+            <button class="tab-button" id="tab-ar" role="tab" type="button" aria-selected="false" aria-controls="panel-ar" data-tab="ar">AR Experience</button>
+            <button class="tab-button" id="tab-ux" role="tab" type="button" aria-selected="false" aria-controls="panel-ux" data-tab="ux">UI/UX</button>
+            <button class="tab-button" id="tab-illustration" role="tab" type="button" aria-selected="false" aria-controls="panel-illustration" data-tab="illustration">Illustration</button>
+          </div>
+
+          <div class="tab-panel active" id="panel-content" role="tabpanel" aria-labelledby="tab-content">
+            <div class="story-grid">
+              <article class="story-card featured">
+                <div>
+                  <div class="story-meta"><span>Enterprise Content Modernization</span><span>Cisco</span></div>
+                  <h3>Replacing text-heavy documentation with immersive visual experiences</h3>
+                  <p>Led content modernization initiatives that transformed complex product documentation into visual, interactive, and AI-assisted experiences for global enterprise audiences.</p>
+                  <ul class="impact-list">
+                    <li>Converted dense technical information into customer-friendly visual narratives.</li>
+                    <li>Aligned Engineering, Marketing, SMEs, Technical Support, and content teams around accurate product storytelling.</li>
+                    <li>Improved scalability by standardizing workflows, visual quality checks, and delivery governance.</li>
+                  </ul>
+                  <div class="tag-list"><span class="tag">Content Strategy</span><span class="tag">Visual Storytelling</span><span class="tag">Workflow Optimization</span><span class="tag">Pamphlets</span></div>
+                </div>
+                <div class="work-proof"><strong>Samples</strong>
+                  <div class="proof-samples">
+                    <a class="proof-thumb" href="https://www.cisco.com/c/dam/en/us/td/docs/iosxr/asr9000/hardware-install/line-card-quick-reference-guide/asr9000_line_card_quick_reference.pdf" target="_blank" rel="noreferrer">
+                      <img src="rajkumar-sample-qrg-thumb.png" alt="Quick Reference Guide thumbnail">
+                      <span><strong>Quick Reference Guide</strong>Line card guide PDF</span>
+                    </a>
+                    <a class="proof-thumb" href="https://www.cisco.com/c/dam/en/us/td/docs/routers/ncs5xx/hardware/installation/3d-animation/NCS540-Full-New/AC-power-install.html" target="_blank" rel="noreferrer">
+                      <img src="rajkumar-sample-interactive-thumb.png" alt="Interactive model thumbnail">
+                      <span><strong>Interactive Model</strong>3D install walkthrough</span>
+                    </a>
+                    <a class="proof-thumb" href="rajkumar-pamphlets.jpeg" target="_blank">
+                      <img src="rajkumar-pamphlets.jpeg" alt="Pamphlet thumbnail">
+                      <span><strong>Pamphlets</strong>Line card repackaging guide</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-3d" role="tabpanel" aria-labelledby="tab-3d">
+            <div class="story-grid">
+              <article class="story-card featured">
+                <div>
+                  <div class="story-meta"><span>3D Product Visualization</span><span>Photorealistic Rendering</span></div>
+                  <h3>Building accurate, high-impact product visuals from engineering inputs</h3>
+                  <p>Created photorealistic 3D visuals, product renderings, topology assets, and low-poly model outputs that helped audiences understand hardware, installation flows, and product structure faster.</p>
+                  <ul class="impact-list">
+                    <li>Worked with 3DS Max, Creo, SolidWorks, KeyShot, and AutoCAD across technical visualization workflows.</li>
+                    <li>Translated engineering data, ECO updates, and product specifications into polished visual assets.</li>
+                    <li>Supported enterprise documentation, marketing collateral, UI screens, and interactive modules.</li>
+                  </ul>
+                  <div class="tag-list"><span class="tag">3DS Max</span><span class="tag">Creo</span><span class="tag">KeyShot</span><span class="tag">Low-Poly Optimization</span></div>
+                </div>
+                <div class="work-proof">
+                  <strong>Samples</strong>
+                  <div class="proof-samples">
+                    <a class="proof-thumb" href="rajkumar-interactive-3d-models.jpeg" target="_blank">
+                      <img src="rajkumar-interactive-3d-models.jpeg" alt="Interactive 3D Models thumbnail">
+                      <span><strong>Interactive 3D Models</strong>AR visualization sample</span>
+                    </a>
+                    <a class="proof-thumb" href="rajkumar-photo-realistic-images.jpeg" target="_blank">
+                      <img src="rajkumar-photo-realistic-images.jpeg" alt="Photo-realistic images thumbnail">
+                      <span><strong>Photo-realistic Images</strong>Rendered product visual</span>
+                    </a>
+                    <a class="proof-thumb" href="rajkumar-photo-realistic-rendered-animation.mp4" target="_blank">
+                      <img src="rajkumar-photo-realistic-animation-thumb.png" alt="Photo-realistic rendered animation thumbnail">
+                      <span><strong>Rendered Animation</strong>Photo-realistic MP4</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-video" role="tabpanel" aria-labelledby="tab-video">
+            <div class="story-grid">
+              <article class="story-card featured">
+                <div>
+                  <div class="story-meta"><span>Instructional Video Systems</span><span>Motion Graphics</span></div>
+                  <h3>Producing product learning videos from script to final delivery</h3>
+                  <p>Developed hardware installation, uninstallation, topology-based, and product demonstration videos with storyboarding, editing, animation, voiceover, audio sync, and post-production polish.</p>
+                  <ul class="impact-list">
+                    <li>Created reusable animated GIFs and motion assets from 3D models to improve content consumption.</li>
+                    <li>Applied chroma key, motion graphics, narration, and multi-platform rendering workflows.</li>
+                    <li>Used After Effects, Camtasia, Lumen5, Creo Animator, and GenAI platforms to accelerate production.</li>
+                  </ul>
+                  <div class="tag-list"><span class="tag">After Effects</span><span class="tag">Camtasia</span><span class="tag">Storyboarding</span><span class="tag">Post-Production</span></div>
+                </div>
+                <div class="work-proof">
+  <strong>Samples</strong>
+  <div class="proof-samples">
+    <a class="proof-thumb" href="https://www.youtube.com/watch?v=YfHJQehr50s" target="_blank" rel="noreferrer">
+      <img src="rajkumar-video-motion-01.png" alt="Sample 01 thumbnail">
+      <span><strong>Cisco Catalyst 9400 Series: Modular Enterprise Access Switches for Wired, Wireless, and IoT</strong></span>
+    </a>
+    <a class="proof-thumb" href="https://www.youtube.com/watch?v=Tg15hqFgxcw" target="_blank" rel="noreferrer">
+      <img src="rajkumar-video-motion-02.png" alt="Sample 02 thumbnail">
+      <span><strong>Cisco 8000 Centralized Router - Cisco 8608</strong></span>
+    </a>
+    <a class="proof-thumb" href="https://www.youtube.com/watch?v=CGeLQTWKaPQ" target="_blank" rel="noreferrer">
+      <img src="rajkumar-video-motion-03.png" alt="Sample 03 thumbnail">
+      <span><strong>Enabling Umbrella Branch on Cisco 4000 Series ISRs</strong></span>
+    </a>
+    <a class="proof-thumb" href="https://www.youtube.com/watch?v=6ocoC4W6Hf8" target="_blank" rel="noreferrer">
+      <img src="rajkumar-video-motion-04.png" alt="Sample 04 thumbnail">
+      <span><strong>Effortless Network Security with Cisco MACsec as a Service</strong></span>
+    </a>
+    <a class="proof-thumb" href="https://video.cisco.com/detail/video/6383726754112" target="_blank" rel="noreferrer">
+      <img src="rajkumar-video-motion-05.png" alt="Sample 05 thumbnail">
+      <span><strong>Installing and Removing Field Replaceable Units of Cisco C9610 Series Smart Switches</strong></span>
+    </a>
+    <a class="proof-thumb" href="https://video.cisco.com/detail/video/6384189959112" target="_blank" rel="noreferrer">
+      <img src="rajkumar-video-motion-06.png" alt="Sample 06 thumbnail">
+      <span><strong>Installing and Removing Field Replaceable Units of Cisco C9350 Series Smart Switches</strong></span>
+    </a>
+    <a class="proof-thumb" href="https://www.youtube.com/watch?v=rElH6IGzrZk" target="_blank" rel="noreferrer">
+      <img src="rajkumar-video-motion-07.png" alt="Sample 07 thumbnail">
+      <span><strong>Install the Air Filter on the Cisco NCS-57C3 Router</strong></span>
+    </a>
+  </div>
+</div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-ar" role="tabpanel" aria-labelledby="tab-ar">
+            <div class="story-grid">
+              <article class="story-card featured">
+                <div>
+                  <div class="story-meta"><span>AR Product Experience</span><span>Interactive 3D</span></div>
+                  <h3>Turning static product references into AR-ready exploration</h3>
+                  <p>Designed and implemented interactive AR-based visualization solutions using Blippar and Cisco DARE, transforming traditional documentation into immersive, real-time user experiences.</p>
+                  <ul class="impact-list">
+                    <li>Converted complex engineering models into optimized assets for interactive web and AR performance.</li>
+                    <li>Collaborated with UX and software teams to make AR interfaces intuitive and useful.</li>
+                    <li>Delivered HTML-based storytelling modules that let users explore product functionality visually.</li>
+                  </ul>
+                  <div class="tag-list"><span class="tag">Blippar</span><span class="tag">Cisco DARE</span><span class="tag">AR UI</span><span class="tag">Interactive HTML</span></div>
+                </div>
+                <div class="work-proof">
+  <strong>Sample</strong>
+  <div class="proof-samples">
+    <a class="proof-thumb" href="rajkumar-ar-interactive-3d-models.jpeg" target="_blank">
+      <img src="rajkumar-ar-interactive-3d-models.jpeg" alt="AR interactive 3D models thumbnail">
+      <span><strong>Interactive 3D Models</strong>AR experience sample</span>
+    </a>
+  </div>
+</div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-ux" role="tabpanel" aria-labelledby="tab-ux">
+            <div class="story-grid">
+              <article class="story-card featured">
+                <div>
+                  <div class="story-meta"><span>Enterprise UX</span><span>Design Systems</span></div>
+                  <h3>Designing practical UI/UX for enterprise web applications</h3>
+                  <p>Led UI/UX design for enterprise applications by converting business requirements into clear flows, wireframes, prototypes, and scalable design solutions.</p>
+                  <ul class="impact-list">
+                    <li>Facilitated requirement analysis, user research, and stakeholder workshops.</li>
+                    <li>Advocated for human-centered, accessible, and data-driven design decisions.</li>
+                    <li>Partnered with Product Managers, Engineers, and Developers to move designs from concept to delivery.</li>
+                  </ul>
+                  <div class="tag-list"><span class="tag">Figma</span><span class="tag">Adobe XD</span><span class="tag">Wireframes</span><span class="tag">Prototypes</span></div>
+                </div>
+                <div class="work-proof">
+  <strong>Sample</strong>
+  <div class="proof-samples">
+    <a class="proof-thumb" href="https://cfnng.cisco.com/feature-finder/ios-xr" target="_blank" rel="noreferrer">
+      <img src="rajkumar-uiux-feature-finder-thumb.png" alt="IOS XR Feature Finder UX thumbnail">
+      <span><strong>Feature Finder</strong>UX design flow</span>
+    </a>
+  </div>
+  <strong>User Journey</strong>
+  <ol class="ux-journey">
+    <li>User lands on Feature Finder to identify supported product features.</li>
+    <li>User searches or filters by platform, release, and feature criteria.</li>
+    <li>User reviews matching feature results and narrows the list for relevance.</li>
+    <li>User opens feature details to validate availability and related documentation.</li>
+    <li>User uses the validated result to plan configuration, upgrade, or customer guidance.</li>
+  </ol>
+</div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-illustration" role="tabpanel" aria-labelledby="tab-illustration">
+            <div class="story-grid">
+              <article class="story-card featured">
+                <div>
+                  <div class="story-meta"><span>Technical Illustration</span><span>Multi-Client Delivery</span></div>
+                  <h3>Simplifying engineering data into useful product visuals</h3>
+                  <p>Delivered 2D and 3D technical illustrations, topology diagrams, quick reference guides, brochures, icons, infographics, and executive-ready visuals for global audiences.</p>
+                  <ul class="impact-list">
+                    <li>Maintained technical accuracy while making complex engineering concepts easier to scan and understand.</li>
+                    <li>Produced visual assets for Cisco, EMC, HP, Qualcomm, Toshiba, Bell Canada, Volvo, and KLA-Tencor engagements.</li>
+                    <li>Standardized illustration practices to improve consistency, scalability, and production efficiency.</li>
+                  </ul>
+                  <div class="tag-list"><span class="tag">Technical Illustration</span><span class="tag">Infographics</span><span class="tag">Topology Diagrams</span><span class="tag">Design QA</span></div>
+                </div>
+                <div class="work-proof">
+  <strong>Samples</strong>
+  <div class="proof-samples">
+    <a class="proof-thumb" href="https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/hardware/hig-fixed-8010/b-8010-series-routers-hig/m-install-8011.html" target="_blank" rel="noreferrer">
+      <img src="rajkumar-illustration-guide-thumb.png" alt="Cisco install guide thumbnail">
+      <span><strong>Cisco Install Guide</strong>Hardware guide link</span>
+    </a>
+    <a class="proof-thumb" href="rajkumar-illustration-sample-1.jpeg" target="_blank">
+      <img src="rajkumar-illustration-sample-1.jpeg" alt="Technical illustration image thumbnail">
+      <span><strong>Illustration Image</strong>Technical visual sample</span>
+    </a>
+  </div>
+</div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="panel-delivery" role="tabpanel" aria-labelledby="tab-delivery">
+            <div class="story-grid">
+              <article class="story-card featured">
+                <div>
+                  <div class="story-meta"><span>Global Delivery</span><span>Onsite-Offshore Leadership</span></div>
+                  <h3>Leading distributed teams and complex documentation programs</h3>
+                  <p>Managed global technical documentation, localization, visualization, publishing, and cross-client delivery programs with onsite coordination experience in the US for EMC.</p>
+                  <ul class="impact-list">
+                    <li>Acted as liaison between client stakeholders, SMEs, offshore teams, and global development groups.</li>
+                    <li>Managed task allocation, project tracking, status reporting, risk identification, executive updates, and delivery assurance.</li>
+                    <li>Mentored multidisciplinary teams of designers, animators, illustrators, and content specialists.</li>
+                  </ul>
+                  <div class="tag-list"><span class="tag">Program Management</span><span class="tag">Stakeholder Management</span><span class="tag">Agile Delivery</span><span class="tag">Team Leadership</span></div>
+                </div>
+                <div class="work-proof">
+  <strong>Sample</strong>
+  <div class="proof-samples">
+    <a class="proof-thumb" href="rajkumar-Delivery-Leadership.png" target="_blank">
+      <img src="rajkumar-Delivery-Leadership.png" alt="AR interactive 3D models thumbnail">
+      <span><strong>Cisco Delivery at Enterprise Scale</strong>Delivery leadership scale</span>
+    </a>
+  </div>
+</div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-head">
+          <h2>Experience and Tools</h2>
+          <p>A career snapshot showing how enterprise experience, creative leadership, technical visualization, and hands-on tool expertise came together across global product and documentation teams.</p>
+        </div>
+        <div class="experience-layout">
+          <div class="timeline">
+            <article class="experience-card">
+              <p class="date">Feb 2013 - Present | Cisco Systems, Bangalore</p>
+              <h3>Sr Content Designer | Lead Graphic-Visual Designer | Photorealistic Rendering | Rich Media Developer | UX Designer</h3>
+              <p>Leads multidisciplinary content, visualization, video, AR, UI/UX, and GenAI-rich media initiatives for enterprise product experiences.</p>
+              <button class="experience-more" type="button" data-profile="cisco">more...</button>
+            </article>
+            <article class="experience-card">
+              <p class="date">Jul 2007 - Feb 2013 | Wipro Technologies, Bangalore</p>
+              <h3>Project Lead | Onsite Project Coordinator | Client: EMC<sup>2</sup> Corporation</h3>
+              <p>Delivered technical documentation, localization, web publishing, illustration, and cross-client visualization programs, including onsite coordination for EMC in Massachusetts.</p>
+              <button class="experience-more" type="button" data-profile="wipro">more...</button>
+            </article>
+            <article class="experience-card">
+              <p class="date">Nov 2006 - Jun 2007 | GP Consulting India, Chennai</p>
+              <h3>Technical Illustrator | Client: KLA-Tencor</h3>
+              <p>Created technical illustration assets for semiconductor and engineering documentation needs.</p>
+              <button class="experience-more" type="button" data-profile="gp">more...</button>
+            </article>
+            <article class="experience-card">
+              <p class="date">Aug 2003 - Nov 2006 | Quest Informatics, Bangalore</p>
+              <h3>Associate Project Manager | Client: Volvo Parts Corporation</h3>
+              <p>Supported global markets with product content, delivery coordination, and documentation programs.</p>
+              <button class="experience-more" type="button" data-profile="quest">more...</button>
+            </article>
+          </div>
+          <aside class="skills-panel" aria-label="Technical skill groups">
+            <div class="skill-block">
+              <h3>3D and Engineering Tools</h3>
+              <p>3DS Max, Creo, SolidWorks, KeyShot, AutoCAD</p>
+            </div>
+            <div class="skill-block">
+              <h3>Design and Publishing</h3>
+              <p>Adobe Creative Suite, Figma, Adobe XD, Photoshop, InDesign, Illustrator, CorelDraw, MS Visio</p>
+            </div>
+            <div class="skill-block">
+              <h3>Video and Animation</h3>
+              <p>After Effects, Camtasia, Lumen5, Creo Animator, storyboarding, voiceover sync, post-production</p>
+            </div>
+            <div class="skill-block">
+              <h3>AI and AR</h3>
+              <p>ChatGPT, Adobe Firefly, Lovart, GenAI platforms, Blippar, Cisco DARE</p>
+            </div>
+            <div class="skill-block">
+              <h3>Education</h3>
+              <p>BE Mechanical Engineering, Shanmugha College of Engineering, 82.7%</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section alt" id="certifications">
+        <div class="roles-band">
+          <h2>Certifications</h2>
+          <div class="cert-list">
+            <div class="cert-line">
+              <p class="eyebrow">UI/UX Design Course: Figma + AI + Real Projects</p>
+              <p class="cert-issued">Issued by: Udemy (May 2026)</p>
+            </div>
+            <div class="cert-line">
+              <p class="eyebrow">Master Design Thinking: Crash Course + Toolbox + AI Tools</p>
+              <p class="cert-issued">Issued by: Udemy (Jun 2026)</p>
+            </div>
+            <div class="cert-line">
+              <p class="eyebrow">Human Centered Design - HCI</p>
+              <p class="cert-issued">Issued by: Udemy (Jun 2026)</p>
+            </div>
+            <div class="cert-line">
+              <p class="eyebrow">Generative AI Prompting for Everyone 2025</p>
+              <p class="cert-issued">Issued by: Cisco (Jun 2025)</p>
+            </div>
+            <div class="cert-line">
+              <p class="eyebrow">Data Science @Cisco Generative AI Green Belt 2025</p>
+              <p class="cert-issued">Issued by: Cisco (Jun 2025)</p>
+            </div>
+            <div class="cert-line">
+              <p class="eyebrow">Generative AI Collaboration White Belt 2024</p>
+              <p class="cert-issued">Issued by: Cisco (Oct 2024)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="contact-wrap">
+          <div class="contact-panel">
+            <p class="eyebrow">Contact</p>
+            <h3>Ready for the next enterprise content and experience challenge</h3>
+            <p>Available for senior roles where design strategy, technical visualization, content transformation, and delivery leadership need to work together.</p>
+            <div class="contact-links">
+              <a class="contact-link" href="mailto:raj261081@yahoo.com"><span>Email</span><span>raj261081@yahoo.com</span></a>
+              <a class="contact-link" href="tel:+919986435155"><span>Mobile</span><span>+91 99864 35155</span></a>
+              <div class="contact-link"><span>Location</span><span>Bengaluru, India</span></div>
+              <a class="contact-link" href="https://www.linkedin.com/in/rajkumard-design/" target="_blank" rel="noreferrer"><span>LinkedIn</span><span>rajkumard-design</span></a>
+            </div>
+          </div>
+          <div class="checklist">
+            <p class="eyebrow">Skills</p>
+            <h3>Core Competencies</h3>
+            <p>Design Leadership | Team Management | Digital Experience Design | Content Transformation | Enterprise Content Design | Technical Visualization | UI/UX Design | User Experience Design | Human-Centered Design | Data-Driven Design | Interaction Design | Wireframing | Prototyping | Information Architecture | User Flow Design | Usability Design | Accessibility Design | 3D Visualization | Photorealistic Rendering | Technical Illustration | Motion Graphics | Video Production | Animation Design | Storyboarding | Visual Storytelling | Graphic Design | Infographics Design | Post-Production Editing | Audio Sync | Interactive Content Design | AR Development | Augmented Reality Design | GenAI Content Creation | Generative AI | Prompt Engineering | AI-Driven Design | AI Video Generation | AI Image Generation | Content Automation | Workflow Optimization | Design Systems | Visual Standards | Cross-Functional Collaboration | Stakeholder Management | Program Management | Project Management | Agile Delivery | Risk Management | Resource Planning | Global Team Coordination | Onsite-Offshore Coordination | Creative Problem Solving | Strategic Thinking | Visual Communication | Storytelling </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="profile-modal" id="companyProfileModal" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
+      <div class="profile-dialog">
+        <div class="profile-header">
+          <div>
+            <p id="profileMeta">Company profile</p>
+            <h2 id="profileTitle">Company Experience</h2>
+          </div>
+          <button class="profile-close" type="button" aria-label="Close company profile">&times;</button>
+        </div>
+        <div class="profile-body" id="profileBody"></div>
+      </div>
+    </div>
+
+    <template id="profile-cisco">
+      <h3>Sr Content Designer | Lead Graphic-Visual Designer | Photorealistic Rendering | Rich Media Developer</h3>
+      <ul>
+        <li>Spearheaded end-to-end development of photorealistic 3D visuals, animations, and AI-generated rich media content by leveraging advanced tools including GenAI, 3D modeling, and rendering platforms, significantly replacing traditional 2D documentation with immersive visual experiences.</li>
+        <li>Directed and mentored a multidisciplinary team of designers, animators, and illustrators, ensuring high-quality delivery of product videos, interactive 3D models, and motion graphics aligned with global branding and technical standards.</li>
+        <li>Orchestrated cross-functional collaboration with Engineering, Marketing, SMEs, and Technical Support teams to translate complex product data into compelling visual narratives, improving content clarity and user comprehension.</li>
+        <li>Established and optimized end-to-end production workflows, including project planning, resource allocation, risk mitigation, and delivery governance, ensuring on-time execution of high-impact visual projects.</li>
+      </ul>
+      <h3>Video Editing | Animation Creation | Storyboarding</h3>
+      <ul>
+        <li>Engineered high-quality product videos, technical animations, and storyboards using advanced video production tools and GenAI platforms, enhancing visual storytelling and customer engagement.</li>
+        <li>Produced and delivered hardware installation, uninstallation, and topology-based instructional videos by integrating voiceovers, motion graphics, chroma key effects, and post-production enhancements.</li>
+        <li>Executed end-to-end video lifecycle management, including scripting, shooting, editing, and multi-platform rendering optimized for web, mobile, and enterprise distribution.</li>
+        <li>Developed reusable animated GIFs and motion assets from 3D models, reducing documentation dependency and improving content consumption efficiency.</li>
+      </ul>
+      <h3>Interactive 3D Models for AR Experience</h3>
+      <ul>
+        <li>Designed and implemented interactive AR-based visualization solutions using Blippar and Cisco DARE, transforming traditional documentation into immersive, real-time user experiences.</li>
+        <li>Developed low-poly optimized 3D models from complex engineering assets to enable high-performance interactive web-based visualization and AR applications.</li>
+        <li>Collaborated with UX and software teams to design intuitive AR interfaces, improving usability and enhancing experience.</li>
+        <li>Delivered HTML-based interactive storytelling modules enabling users to explore product functionalities through engaging 3D visualization experiences.</li>
+      </ul>
+      <h3>Technical Illustration | Graphic Design</h3>
+      <ul>
+        <li>Created high-impact technical illustrations, topology diagrams, infographics, and marketing visuals to simplify complex engineering concepts for global audiences.</li>
+        <li>Designed and developed quick reference guides, brochures, and visual documentation assets that significantly reduced textual dependency and improved content usability.</li>
+        <li>Ensured strict adherence to brand guidelines while producing executive-level presentations, marketing collaterals, and enterprise communication materials.</li>
+        <li>Standardized illustration and design processes to improve consistency, scalability, and production efficiency across global content teams.</li>
+      </ul>
+      <h3>UI/UX Designer</h3>
+      <ul>
+        <li>Led end-to-end UI/UX design for enterprise web applications using Figma and Adobe XD, translating business requirements into intuitive, user-centric digital experiences.</li>
+        <li>Conducted user research, requirement analysis, and stakeholder workshops to define interaction flows, wireframes, and high-fidelity prototypes aligned with business goals.</li>
+        <li>Advocated for human-centered and data-driven design principles, ensuring accessibility, usability, and seamless user journeys across digital platforms.</li>
+        <li>Collaborated with cross-functional teams including Product Managers, Engineers, and Developers to deliver scalable design solutions aligned with user expectations and business strategy.</li>
+      </ul>
+    </template>
+
+    <template id="profile-wipro">
+      <h3>Onsite Project Coordinator | Technical Documentation, Localization &amp; Globalization Projects</h3>
+      <ul>
+        <li>Coordinated and executed end-to-end technical documentation, localization, and publishing projects onsite in the US on H1-B, ensuring seamless delivery of enterprise content for global Information and Data Management and Storage products.</li>
+        <li>Acted as key liaison between client stakeholders, SMEs, offshore teams, and global development groups, driving effective communication, requirement gathering, validation, and alignment across distributed teams.</li>
+        <li>Managed and monitored full production lifecycle activities including task allocation, project tracking, status reporting, risk identification, and executive-level reporting for project governance and delivery assurance.</li>
+        <li>Developed and published technical documentation and product content through web publishing platforms, including metadata management, proofreading, formatting, and print/CD-ready output preparation in compliance with process standards.</li>
+      </ul>
+      <h3>Project Lead | Technical Illustrator | Cross-Client Delivery Management</h3>
+      <ul>
+        <li>Led and delivered multiple illustration, documentation, and visualization projects across global clients, ensuring high-quality output aligned with engineering specifications, design standards, and branding guidelines.</li>
+        <li>Created and transformed complex engineering data into 2D/3D technical illustrations, icons, and graphical assets to support product documentation, UI screens, and enterprise visualization needs.</li>
+        <li>Directed cross-functional project execution by collaborating with SMEs, design teams, and engineering stakeholders to interpret requirements and implement design changes based on ECOs and product updates.</li>
+        <li>Supervised and mentored project teams across multiple engagements including HP, Qualcomm, Toshiba, and Bell Canada, ensuring timely delivery, design consistency, and production efficiency across diverse domains.</li>
+      </ul>
+    </template>
+
+    <template id="profile-gp">
+      <h3>Technical Illustrator</h3>
+      <ul>
+        <li>Created technical illustrations for inspection machines used for inspecting semiconductor devices.</li>
+        <li>Created technical illustrations for the online catalogue of inspection machines used for inspecting newly manufactured semiconductor devices.</li>
+        <li>Interacted with NPIs, TSEs, and SMEs to gather design changes and update the latest models in catalogues.</li>
+        <li>Implemented catalogue updates based on ECOs, including Engineering Change Orders and model revisions.</li>
+      </ul>
+    </template>
+
+    <template id="profile-quest">
+      <h3>Associate Project Manager | Project Lead | Technical Illustrator | Component Engineer</h3>
+      <ul>
+        <li>Created parts and service catalogues along with illustrations for heavy duty trucks and construction equipment.</li>
+        <li>Led a team of 20+ members in updating parts catalogues using spare parts information, design changes, and technical illustrations.</li>
+        <li>Handled business requirements gathering, analysis, and implementation of new releases and applications.</li>
+        <li>Prepared and tracked project plans for ongoing projects.</li>
+        <li>Created new spare parts and maintained existing truck catalogues using Design Change Notes.</li>
+        <li>Migrated catalogues from acquired companies and parent models, including Renault catalogues to Volvo catalogues and Mack catalogues to Volvo catalogues.</li>
+        <li>Performed spare parts engineering work, including judging production parts for aftermarket support and marking passive and active status for aftermarket usage.</li>
+        <li>Attended training at Volvo Parts and Trucks Corporation in Gothenburg, Sweden.</li>
+        <li>Created illustrations for truck components and assemblies for aftermarket support in the E-catalogue.</li>
+        <li>Maintained E-catalogues for customized trucks, including highway and construction trucks, and buses across global markets.</li>
+        <li>Created and maintained BOM, including Bill of Materials content.</li>
+      </ul>
+    </template>
+
+    <footer>
+      <div class="footer-inner">
+        <span>Portfolio content for Rajkumar D</span>
+        <span>Design Expert</span>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const tabButtons = Array.from(document.querySelectorAll(".tab-button"));
+    const tabPanels = Array.from(document.querySelectorAll(".tab-panel"));
+    const profileData = {
+      cisco: {
+        meta: "Feb 2013 - Present | Cisco Systems, Bangalore",
+        title: "Cisco Systems"
+      },
+      wipro: {
+        meta: "Jul 2007 - Feb 2013 | Wipro Technologies, Bangalore",
+        title: "Client: EMC Corporation"
+      },
+      gp: {
+        meta: "Nov 2006 - Jun 2007 | GP Consulting India, Chennai",
+        title: "Client: KLA-Tencor"
+      },
+      quest: {
+        meta: "Aug 2003 - Nov 2006 | Quest Informatics, Bangalore",
+        title: "Client: Volvo Parts Corporation"
+      }
+    };
+    const profileModal = document.querySelector("#companyProfileModal");
+    const profileMeta = document.querySelector("#profileMeta");
+    const profileTitle = document.querySelector("#profileTitle");
+    const profileBody = document.querySelector("#profileBody");
+    const profileClose = document.querySelector(".profile-close");
+
+    function selectTab(button) {
+      const target = button.dataset.tab;
+      tabButtons.forEach((item) => {
+        item.setAttribute("aria-selected", String(item === button));
+      });
+      tabPanels.forEach((panel) => {
+        panel.classList.toggle("active", panel.id === `panel-${target}`);
+      });
+    }
+
+    tabButtons.forEach((button, index) => {
+      button.addEventListener("click", () => selectTab(button));
+      button.addEventListener("keydown", (event) => {
+        if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") {
+          return;
+        }
+        event.preventDefault();
+        const direction = event.key === "ArrowRight" ? 1 : -1;
+        const nextIndex = (index + direction + tabButtons.length) % tabButtons.length;
+        tabButtons[nextIndex].focus();
+        selectTab(tabButtons[nextIndex]);
+      });
+    });
+
+    function openProfile(profileKey) {
+      const template = document.querySelector(`#profile-${profileKey}`);
+      const profile = profileData[profileKey];
+      if (!template || !profile) {
+        return;
+      }
+      profileMeta.textContent = profile.meta;
+      profileTitle.textContent = profile.title;
+      profileBody.innerHTML = "";
+      profileBody.append(template.content.cloneNode(true));
+      profileModal.classList.add("open");
+      document.body.style.overflow = "hidden";
+      profileClose.focus();
+    }
+
+    function closeProfile() {
+      profileModal.classList.remove("open");
+      document.body.style.overflow = "";
+    }
+
+    document.querySelectorAll(".experience-more").forEach((button) => {
+      button.addEventListener("click", () => openProfile(button.dataset.profile));
+    });
+
+    profileClose.addEventListener("click", closeProfile);
+    profileModal.addEventListener("click", (event) => {
+      if (event.target === profileModal) {
+        closeProfile();
+      }
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && profileModal.classList.contains("open")) {
+        closeProfile();
+      }
+    });
+  </script>
+</body>
+</html>
